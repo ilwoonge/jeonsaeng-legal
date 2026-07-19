@@ -83,9 +83,10 @@
   <li>생년월일시에서 계산된 파생 특성값(간지 등 명리학적 계산값)</li>
   <li>이용자가 대화에 직접 입력한 내용</li>
   <li>‘인연의 실’ 이용 시 상대방의 파생 특성값</li>
+  <li>출생 국가(도시·좌표가 아닌 국가 단위 — 초상 얼굴 생성용)</li>
 </ul>
 <p>전송 목적: 전생 인물·일대기·초상·일기·유품·대화 응답의 생성. OpenAI는 API로 전송된 데이터를 모델 학습에 사용하지 않으며, 남용 감시 목적으로 최대 30일간 보관 후 파기합니다.</p>
-<p><strong>전송되지 않는 정보:</strong> 이용자가 입력한 <em>원시 생년월일·시각 그 자체</em>와 <em>태어난 곳(도시명·좌표)</em>은 기기 밖으로 전송되지 않습니다. 앱은 이를 기기 안에서 특성값으로 변환한 뒤 그 결과만 전송합니다.</p>
+<p><strong>전송되지 않는 정보:</strong> 이용자가 입력한 <em>원시 생년월일·시각 그 자체</em>와 <em>태어난 도시(도시명·좌표)</em>는 기기 밖으로 전송되지 않습니다. 앱은 이를 기기 안에서 특성값으로 변환한 뒤 그 결과만 전송하며, 출생지에서는 국가 단위 정보만 전송됩니다.</p>
 <p>자세한 내용은 <a href="https://openai.com/policies/privacy-policy" target="_blank" rel="noopener">OpenAI Privacy Policy</a>, <a href="https://openai.com/policies/api-data-usage-policies" target="_blank" rel="noopener">API data usage policies</a>, <a href="https://supabase.com/privacy" target="_blank" rel="noopener">Supabase Privacy Policy</a>를 참고하시기 바랍니다.</p>
 
 <h2>2. 계정과 삭제</h2>
@@ -158,9 +159,10 @@
   <li>Derived traits computed from your birth date and time (astrological calculation values)</li>
   <li>Text you type into conversations</li>
   <li>The other person’s derived traits when you use “Threads of Fate”</li>
+  <li>Your country of birth (country-level only, not city or coordinates — used to render the portrait’s face)</li>
 </ul>
 <p>Purpose: generating the past-life character, biography, portrait, diary, keepsakes, and chat replies. OpenAI does not train its models on data sent via the API and retains it for up to 30 days for abuse monitoring, then deletes it.</p>
-<p><strong>Never sent:</strong> your <em>raw date and time of birth</em> and your <em>place of birth (city name and coordinates)</em> never leave your device. The App converts them into derived traits on your device and transmits only the result.</p>
+<p><strong>Never sent:</strong> your <em>raw date and time of birth</em> and your <em>city of birth (city name and coordinates)</em> never leave your device. The App converts them into derived traits on your device and transmits only the result; of your birthplace, only country-level information is transmitted.</p>
 <p>See the <a href="https://openai.com/policies/privacy-policy" target="_blank" rel="noopener">OpenAI Privacy Policy</a>, <a href="https://openai.com/policies/api-data-usage-policies" target="_blank" rel="noopener">API data usage policies</a>, and <a href="https://supabase.com/privacy" target="_blank" rel="noopener">Supabase Privacy Policy</a>.</p>
 
 <h2>2. Account and Deletion</h2>
@@ -234,9 +236,10 @@
   <li>生年月日時から計算された派生特性値（干支など命理学的な計算値）</li>
   <li>利用者が会話に直接入力した内容</li>
   <li>「縁の糸」のご利用時は相手の派生特性値</li>
+  <li>出生国（都市・座標ではなく国単位のみ — 肖像の顔の生成用）</li>
 </ul>
 <p>送信の目的: 前世の人物・伝記・肖像・日記・形見・会話応答の生成。OpenAIはAPI経由で送信されたデータをモデルの学習に使用せず、不正利用の監視のために最大30日間保管した後に削除します。</p>
-<p><strong>送信されない情報:</strong> 利用者が入力した<em>生年月日・時刻そのもの</em>と<em>生まれた場所（都市名・座標）</em>は端末の外へ送信されません。本アプリはこれらを端末内で特性値に変換し、その結果のみを送信します。</p>
+<p><strong>送信されない情報:</strong> 利用者が入力した<em>生年月日・時刻そのもの</em>と<em>生まれた都市（都市名・座標）</em>は端末の外へ送信されません。本アプリはこれらを端末内で特性値に変換し、その結果のみを送信します。出生地については国単位の情報のみが送信されます。</p>
 <p>詳細は <a href="https://openai.com/policies/privacy-policy" target="_blank" rel="noopener">OpenAI Privacy Policy</a>、<a href="https://openai.com/policies/api-data-usage-policies" target="_blank" rel="noopener">API data usage policies</a>、<a href="https://supabase.com/privacy" target="_blank" rel="noopener">Supabase Privacy Policy</a> をご覧ください。</p>
 
 <h2>2. アカウントと削除</h2>
@@ -310,9 +313,10 @@
   <li>Valores derivados calculados a partir de tu fecha y hora de nacimiento (valores de cálculo astrológico)</li>
   <li>El texto que escribes en las conversaciones</li>
   <li>Los valores derivados de la otra persona cuando usas «Hilos del destino»</li>
+  <li>Tu país de nacimiento (solo a nivel de país, no ciudad ni coordenadas — se usa para generar el rostro del retrato)</li>
 </ul>
 <p>Finalidad: generar el personaje de vida pasada, la biografía, el retrato, el diario, las reliquias y las respuestas del chat. OpenAI no entrena sus modelos con los datos enviados por la API y los conserva hasta 30 días para vigilar abusos; después los elimina.</p>
-<p><strong>Nunca se envía:</strong> tu <em>fecha y hora de nacimiento originales</em> y tu <em>lugar de nacimiento (nombre de la ciudad y coordenadas)</em> nunca salen de tu dispositivo. La App los convierte en valores derivados dentro del dispositivo y transmite solo el resultado.</p>
+<p><strong>Nunca se envía:</strong> tu <em>fecha y hora de nacimiento originales</em> y tu <em>ciudad de nacimiento (nombre de la ciudad y coordenadas)</em> nunca salen de tu dispositivo. La App los convierte en valores derivados dentro del dispositivo y transmite solo el resultado; de tu lugar de nacimiento solo se transmite información a nivel de país.</p>
 <p>Consulta la <a href="https://openai.com/policies/privacy-policy" target="_blank" rel="noopener">OpenAI Privacy Policy</a>, las <a href="https://openai.com/policies/api-data-usage-policies" target="_blank" rel="noopener">API data usage policies</a> y la <a href="https://supabase.com/privacy" target="_blank" rel="noopener">Supabase Privacy Policy</a>.</p>
 
 <h2>2. Cuenta y eliminación</h2>
